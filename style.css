@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap');
+
+body {
+  background-color: hsl(0, 0%, 94%);
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+.calc-container {
+  height: 600px;
+  width: 700px;
+  background-color: hsl(0, 0%, 100%);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 200px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+}
+
+.calc-container,
+img {
+  position: absolute;
+}
+
+.date {
+  display: inline-block;
+  padding-top: 50px;
+}
+
+.date label {
+  letter-spacing: 2px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.date label,
+input::placeholder {
+  color: hsl(0, 1%, 44%);
+}
+
+input {
+  padding: 20px;
+  width: 40%;
+  border-radius: 10px;
+  margin-top: 0.5em;
+}
+
+input,
+hr {
+  border: 1px solid hsl(0, 0%, 86%);
+}
+
+input::placeholder {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.day {
+  margin-left: 3em;
+}
+
+.month,
+.year {
+  margin-left: -4em;
+}
+
+hr {
+  width: 85%;
+  margin-top: 3em;
+  position: relative;
+}
+
+img {
+  margin-left: 80%;
+  margin-top: -50px;
+  background-color: hsl(259, 100%, 65%);
+  padding: 20px;
+  border-radius: 50px;
+}
+
+img:hover {
+  cursor: pointer;
+  background-color: hsl(259, 62%, 53%);
+}
+
+span {
+  color: hsl(259, 100%, 65%);
+  margin-left: 0.6em;
+}
+
+span,
+.results-container label {
+  font-size: 80px;
+  font-weight: 800;
+  font-style: italic;
+}

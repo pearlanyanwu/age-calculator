@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <title> Age Calculator App </title>
+</head>
+
+<body>
+  <div class="calc-container">
+    <div class="date day">
+      <label for="birth-day"> Day </label> <br>
+      <input type="text" id="birth-day" placeholder="DD">
+    </div>
+    <div class="date month">
+      <label for="birth-month"> Month </label> <br>
+      <input type="text" id="birth-month" placeholder="MM">
+    </div>
+    <div class="date year">
+      <label for="birth-year"> Year </label> <br>
+      <input type="text" id="birth-year" placeholder="YYYY">
+    </div>
+
+    <hr> <img src="images/icon-arrow.svg" alt="calculate-button" id="calculate-button">
+
+    <div class="results-container">
+      <div class="results">
+        <span id="result-years"> -- </span> <label> year(s) </label>
+      </div>
+      <div class="results">
+        <span id="result-months"> -- </span> <label> month(s) </label>
+      </div>
+      <div class="results">
+        <span id="result-days"> -- </span> <label> day(s) </label>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
