@@ -5,9 +5,9 @@ var birthYear = document.getElementById("birth-year");
 var ageInYears = document.getElementById("result-years");
 var ageInMonths = document.getElementById("result-months");
 var ageInDays = document.getElementById("result-days");
-const regexDays = /^(0[1-9]|[12][0-9]|3[01])$/;
-const regexMonths = /^(0[1-9]|1[0-2])$/;
-const regexYears = /^(19|20)\d{2}$/;
+const regexDays = /^(0[1-9]|[12][0-9]|3[0-1])$/; // 01-09, 10-29, 30-31
+const regexMonths = /^(0[1-9]|1[0-2])$/; // 01-09, 10-12
+const regexYears = /^(19|20)\d{2}$/; // 1900-(current year)
 var today = new Date();
 
 button.addEventListener("click", () => {
@@ -23,7 +23,7 @@ button.addEventListener("click", () => {
     ageInMonths.innerText = today.getMonth() - birthMonth.value + " ";
   }
   
-  if (regexYears.test(birthYear.value) && birthYear.value >= new Date().getFullYear() || !regexYears.test(birthYear.value)) {
+  if (regexYears.test(birthYear.value) && birthYear.value > new Date().getFullYear() || !regexYears.test(birthYear.value)) {
     birthYear.style.borderColor = "hsl(0, 100%, 67%)";
   } else {
     ageInYears.innerText = today.getFullYear() - birthYear.value + " ";
