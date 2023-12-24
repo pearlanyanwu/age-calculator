@@ -10,7 +10,7 @@ This is a solution to the [Age calculator app challenge on Frontend Mentor](http
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued Development](#continued-development)
+  - [Useful resources](#useful-resourses)
 
 ## Overview
 
@@ -43,7 +43,14 @@ Users should be able to:
 
 ### What I learned
 
-In this project, I learned how to use dates in JS to calculate an individual's age based on the month, day, and year provided.
+In this project, I learned how to use regex patterns to validate date input and calculate and display an individual's age using JS DOM manipulation.
 
-### Continued development
-At this time, I'm still working on the JS--to reduce the amount of code while ensuring all test cases are properly handled.
+```js
+const regexDays = /^(0[1-9]|[12][0-9]|3[01])$/;
+const regexMonths = /^(0[1-9]|1[0-2])$/;
+const regexYears = /^(19|20)\d{2}$/;
+```
+
+### Useful resources
+
+- [freeCodeCamp.org](https://www.freecodecamp.org/news/regex-for-date-formats-what-is-the-regular-expression-for-matching-dates/#howtomatchdateswithregularexpressionsexample2) - This provided me with the regex patterns for dd, mm, and yyyy date format. I really liked this pattern and will use it going forward.
