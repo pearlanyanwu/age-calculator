@@ -45,7 +45,7 @@ Users should be able to:
 
 ### What I learned
 
-In this project, I learned how to use regex patterns to validate date input and calculate and display an individual's age using JS DOM manipulation.
+In this project, I learned how to use regex patterns to validate date input.
 
 ```js
 const regexDays = /^(0[1-9]|[12][0-9]|3[01])$/;
