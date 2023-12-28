@@ -40,6 +40,8 @@ Users should be able to:
 - HTML
 - CSS
 - JS
+* Disclaimer: This project does not consider birthdays in leap years. In other words, February has a max of 28 days.
+* Disclaimer: For the time being, I'm displaying error messages in the console, not on the frontend. Will continue improving soon.
 
 ### What I learned
 
@@ -53,4 +55,4 @@ const regexYears = /^(19|20)\d{2}$/;
 
 ### Useful resources
 
-- [freeCodeCamp.org](https://www.freecodecamp.org/news/regex-for-date-formats-what-is-the-regular-expression-for-matching-dates/#howtomatchdateswithregularexpressionsexample2) - This provided me with the regex patterns for dd, mm, and yyyy date format. I really liked this pattern and will use it going forward.
+- [freeCodeCamp.org](https://www.freecodecamp.org/news/regex-for-date-formats-what-is-the-regular-expression-for-matching-dates/#howtomatchdateswithregularexpressionsexample2) - This provided me with the regex patterns for dd, mm, and yyyy date formats. I really like this pattern as it's very clear. I will use it going forward.
